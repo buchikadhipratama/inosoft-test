@@ -57,7 +57,6 @@
                     <div class="card-header">
                         <h3 class="card-title">DataTable with minimal features & hover style</h3>
                     </div>
-                    <!-- /.card-header -->
                     <div class="card-body">
                         <table id="example2" class="table table-bordered table-hover">
                             <thead>
@@ -127,14 +126,9 @@
                             </tbody>
                         </table>
                     </div>
-                    <!-- /.card-body -->
                 </div>
-                <!-- /.card -->
             </div>
-            <!-- /.col -->
         </div>
 </section>
-<!-- /.content -->
 </div>
-<!-- /.content-wrapper -->
 @endsection

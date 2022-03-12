@@ -4,7 +4,6 @@
 @section('submenu','Sales')
 
 @section('content')
-<!-- Main content -->
 <section class="content">
     <div class="card card-solid">
         <div class="card-body pb-0">
@@ -60,11 +59,7 @@
         </div>
     </div>
 
-
-
-
     <!-- Modal -->
-    {{-- @foreach ($response as $r) --}}
     <div class="modal fade" id="modalEdit" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
@@ -89,9 +84,7 @@
                 </div>
             </div>
         </div>
-        {{-- @endforeach --}}
 
-        <!-- /.content -->
 </section>
 
 <script>
@@ -108,10 +101,6 @@
             }
         })
     }
-    $(document).ready(function(){
-        $('#sales').addClass('active')
-    })
 </script>
 </div>
-<!-- /.content-wrapper -->
 @endsection

@@ -19,21 +19,7 @@ class VehicleRepository
             $query->where('status',1); //1=stock, 2=sold
         })->get();
     }
-
-    public function GetMotorStock()
-    {
-        return Vehicle::where(function ($query){
-            $query->where('vehicle_id',1)->where('status',1); //1=stock, 2=sold
-        })->get();
-    }
-
-    public function GetMobilStock()
-    {
-        return Vehicle::where(function ($query){
-            $query->where('vehicle_id',1); //1=stock, 2=sold
-        })->get();
-    }
-
+    
     public function GetVehicleSold()
     {
         return Vehicle::where(function ($query){

@@ -32,6 +32,7 @@ $ php artisan serve
 ```
 ### Notes
 - there are some features of the requests that i cant able to complete
+- there is a user interface that can be used to perform logic tests on applications, by setting the controller (unit tests are available)
 - unit tests and database backups have been attached to the attachment folder
 
 ## Special Thanks

@@ -4,7 +4,6 @@
 @section('submenu','Vehicle Stock')
 
 @section('content')
-<!-- Main content -->
 <section class="content">
     <div class="container-fluid">
         <div class="row">
@@ -136,14 +135,9 @@
                             </tbody>
                         </table>
                     </div>
-                    <!-- /.card-body -->
                 </div>
-                <!-- /.card -->
             </div>
-            <!-- /.col -->
         </div>
 </section>
-<!-- /.content -->
 </div>
-<!-- /.content-wrapper -->
 @endsection

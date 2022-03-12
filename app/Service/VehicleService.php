@@ -18,16 +18,6 @@ class VehicleService{
         return (new VehicleRepository)->getStock();
     }
 
-    public function Motor()
-    {
-        return (new VehicleRepository)->getMotorStock();
-    }
-
-    public function Mobil()
-    {
-        return (new VehicleRepository)->getMobilStock();
-    }
-
     public function VehicleSold()
     {
         return (new VehicleRepository)->getVehicleSold();
