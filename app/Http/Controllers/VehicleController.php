@@ -2,85 +2,59 @@
 
 namespace App\Http\Controllers;
 
+use App\Service\VehicleService;
+use App\Models\Vehicle;
 use App\Http\Requests\StoreVehicleRequest;
 use App\Http\Requests\UpdateVehicleRequest;
-use App\Models\Vehicle;
+use Database\Seeders\VehicleSeeder;
+use Illuminate\Http\Request;
 
 class VehicleController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+
     public function index()
     {
-        //
+        $response = (new VehicleService)->getAllVehicle();
+        // return view ('report', compact('response'));
+        return $response; //for api
+
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
+    public function stock()
     {
-        //
+        $response = (new VehicleService)->remainingStock();
+        // return view('stock', compact('response'));
+        return $response; //for api
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \App\Http\Requests\StoreVehicleRequest  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(StoreVehicleRequest $request)
+    public function sold()
     {
-        //
+        $response = (new VehicleService)->vehicleSold();
+        // return view('stock', compact('response'));
+        return $response; //for api
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\Vehicle  $vehicle
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Vehicle $vehicle)
+    public function sales()
     {
-        //
+        $response = (new VehicleService)->RemainingStock();
+        // return view('sales', compact('response'));
+        return $response; //for api
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Models\Vehicle  $vehicle
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Vehicle $vehicle)
+    public function update(Request $request)
     {
-        //
+        // dd($request);
+        $data = Vehicle::find($request->id);
+        $data->status=2;
+        $data->save();
+        return redirect()->back();
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \App\Http\Requests\UpdateVehicleRequest  $request
-     * @param  \App\Models\Vehicle  $vehicle
-     * @return \Illuminate\Http\Response
-     */
-    public function update(UpdateVehicleRequest $request, Vehicle $vehicle)
+    public function edit($id)
     {
-        //
+        $data = Vehicle::find($id);
+
+        return response()->json(['data'=>$data]);
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Models\Vehicle  $vehicle
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(Vehicle $vehicle)
-    {
-        //
-    }
 }

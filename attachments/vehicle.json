@@ -1,0 +1,101 @@
+/* 1 */
+{
+    "_id" : ObjectId("6215feeadd92d396ff575395"),
+    "vehicle_id" : 1,
+    "name_id" : "vario-001",
+    "mesin" : "150 cc",
+    "suspensi" : "Telescopic",
+    "transmisi" : "Matic ",
+    "kendaraan" : {
+        "tahun" : "2012",
+        "warna" : "Hitam",
+        "harga" : "10.000.000"
+    },
+    "status" : 1,
+    "updated_at" : ISODate("2022-02-25T04:08:10.579Z")
+}
+
+/* 2 */
+{
+    "_id" : ObjectId("6215feeadd92d396ff575396"),
+    "vehicle_id" : 1,
+    "name_id" : "scoopy-001",
+    "mesin" : "110 cc",
+    "suspensi" : "Telescopic",
+    "transmisi" : "Matic ",
+    "kendaraan" : {
+        "tahun" : "2015",
+        "warna" : "Biru",
+        "harga" : "12.000.000"
+    },
+    "status" : 2,
+    "updated_at" : ISODate("2022-03-12T11:10:10.563Z")
+}
+
+/* 3 */
+{
+    "_id" : ObjectId("6215feeadd92d396ff575380"),
+    "vehicle_id" : 2,
+    "name_id" : "avanza-001",
+    "mesin" : "1200 cc",
+    "kapasitas" : "8",
+    "tipe" : "SUV",
+    "kendaraan" : {
+        "tahun" : "2013",
+        "warna" : "merah",
+        "harga" : "110.000.000"
+    },
+    "status" : 1,
+    "updated_at" : ISODate("2022-02-25T04:08:10.579Z")
+}
+
+/* 4 */
+{
+    "_id" : ObjectId("6215feeadd92d396ff575398"),
+    "vehicle_id" : 1,
+    "name_id" : "klx-001",
+    "mesin" : "150 cc",
+    "suspensi" : "Moco Shock",
+    "transmisi" : "Manual ",
+    "kendaraan" : {
+        "tahun" : "2020",
+        "warna" : "Hitam",
+        "harga" : "19.000.000"
+    },
+    "status" : 2,
+    "updated_at" : ISODate("2022-02-25T04:08:10.579Z")
+}
+
+/* 5 */
+{
+    "_id" : ObjectId("6215feeadd92d396ff575384"),
+    "vehicle_id" : 2,
+    "name_id" : "zenia-001",
+    "mesin" : "1300 cc",
+    "kapasitas" : "8",
+    "tipe" : "SUV",
+    "kendaraan" : {
+        "tahun" : "2015",
+        "warna" : "putih",
+        "harga" : "115.000.000"
+    },
+    "status" : 2,
+    "updated_at" : ISODate("2022-02-25T04:08:10.579Z")
+}
+
+/* 6 */
+{
+    "_id" : ObjectId("6215feeadd92d396ff575385"),
+    "vehicle_id" : 2,
+    "name_id" : "alphard-001",
+    "mesin" : "2000 cc",
+    "kapasitas" : "9",
+    "tipe" : "SUV",
+    "kendaraan" : {
+        "tahun" : "2021",
+        "warna" : "hitam",
+        "harga" : "1.110.000.000"
+    },
+    "status" : 1,
+    "updated_at" : ISODate("2022-02-25T04:08:10.579Z")
+}

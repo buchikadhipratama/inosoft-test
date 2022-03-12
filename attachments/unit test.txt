@@ -1,0 +1,5 @@
+http://127.0.0.1:8000/api/sales/edit/6215feeadd92d396ff575395
+http://127.0.0.1:8000/api/sales/update
+http://127.0.0.1:8000/api/stock
+http://127.0.0.1:8000/api/report
+http://127.0.0.1:8000/api/sales
